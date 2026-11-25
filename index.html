@@ -325,6 +325,140 @@ body[data-theme="light"] .field{background:#fff;color:#29263c}
 @media(max-width:650px){.sh-hero{padding:23px;min-height:0}.sh-orbit{position:absolute;right:-90px;bottom:-55px;width:260px;height:220px;opacity:.65;transform:scale(.8);transform-origin:bottom right}.sh-hero-copy{max-width:100%}.sh-hero p{max-width:90%}.sh-hero h2{font-size:32px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat{padding:14px}.stat strong{font-size:24px}.dashboard-grid{grid-template-columns:1fr}}
 @media(prefers-reduced-motion:reduce){.sh-float{animation:none}button,.stat{transition:none}}
 </style>
+
+<style id="sponsorhub-darkpan-theme">
+/* DarkPan-inspired SponsorHub: solid surfaces, clear hierarchy, low-cost rendering */
+:root{
+ --bg:#090a0f;--side:#191c24;--card:#191c24;--card2:#20242e;
+ --line:#303541;--txt:#f4f5f8;--muted:#9299aa;
+ --blue:#8b72ee;--purple:#a18cf4;--cyan:#67b8d5;
+ --green:#55c99a;--red:#ef7888;--yellow:#e8bd72;
+ --primary:#8b72ee;--secondary:#191c24;--dark:#090a0f;--light:#9299aa;
+}
+html{scroll-behavior:smooth}
+body{
+ background:var(--bg)!important;color:var(--txt);
+ background-image:none!important;
+}
+.app{grid-template-columns:250px minmax(0,1fr)}
+.sidebar{
+ background:#191c24!important;border-right:1px solid #2a2e38;
+ box-shadow:none;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
+}
+.main{background:#090a0f;max-width:none;padding:26px clamp(16px,2.2vw,32px)}
+.brand{padding-bottom:22px}
+.logo{background:#8b72ee!important;box-shadow:none!important;border-radius:9px}
+.navcap{color:#777f91;letter-spacing:1.1px}
+.nav button{
+ border-radius:7px!important;color:#a6adbd;
+ background:transparent!important;box-shadow:none!important;
+ transition:background-color .16s ease,color .16s ease!important;
+}
+.nav button:hover,.nav button.active{
+ background:#292d38!important;color:#b7a6ff!important;
+ transform:none!important;filter:none!important;
+}
+.nav .ico{background:#242833!important;border-radius:7px}
+.sidefoot{color:#747d8e}
+.top{
+ border-bottom:1px solid #282d38;padding:0 0 20px;margin-bottom:22px;
+}
+.top h1{font-size:clamp(24px,2.3vw,31px);letter-spacing:-.035em}
+.eyebrow{color:#a995ff;letter-spacing:1.5px}
+.muted{color:#9299aa}
+.stat,.panel{
+ background:#191c24!important;border:1px solid #2b303b!important;
+ box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
+ border-radius:10px!important;
+}
+.stat{padding:18px;min-height:124px;transition:border-color .16s ease!important}
+.stat:after{display:none!important}
+.stat:hover{transform:none!important;border-color:#62548d!important}
+.stat strong{font-size:clamp(24px,2vw,30px);letter-spacing:-.035em}
+.panel{padding:19px}
+.panelhead h2{font-size:15px;color:#f0f1f5}
+.dashboard-grid{gap:18px}
+.dashboard-panel{min-height:250px}
+.notice{background:#252333!important;border:1px solid #49405f!important;border-radius:8px}
+button{
+ box-shadow:none!important;transition:background-color .16s ease,border-color .16s ease,color .16s ease!important;
+}
+button:hover{transform:none!important;filter:brightness(1.08)}
+button:not(.ghost){background:#8b72ee;color:#fff}
+button:not(.ghost):hover{background:#9a84f2}
+.ghost{background:#252a35!important;border:1px solid #373d49!important;color:#d6d9e2!important}
+.danger{background:#39242c!important;border-color:#69404c!important}
+.field,input,select,textarea{
+ background:#10131a!important;color:#edf0f6!important;border:1px solid #343a47!important;
+ box-shadow:none!important;border-radius:7px!important;
+}
+.field:focus,input:focus,select:focus,textarea:focus{outline:2px solid #8b72ee55;border-color:#8b72ee!important}
+.sh-hero{
+ min-height:255px;margin-bottom:18px;padding:clamp(22px,2.8vw,36px);
+ border-radius:12px;border:1px solid #39334e;
+ background:#20212b!important;box-shadow:none!important;
+}
+.sh-hero:before{background:linear-gradient(100deg,rgba(139,114,238,.12),transparent 65%)!important}
+.sh-kicker{color:#b6a6f7;letter-spacing:1.5px}
+.sh-live-dot{box-shadow:none}
+.sh-hero h2{font-size:clamp(28px,3.3vw,42px)}
+.sh-hero h2 em{color:#b6a6f7}
+.sh-hero p{color:#aeb4c2}
+.sh-orbit{opacity:.9}
+.sh-orbit-word{color:rgba(255,255,255,.045)}
+.sh-orbit-ring{border-color:rgba(180,163,255,.18)}
+.sh-orbit-core{
+ background:#302b42!important;border:1px solid #62568a!important;
+ box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
+ border-radius:16px;color:#fff;
+}
+.sh-orbit-core small{color:#c3b8ed}
+.sh-float{
+ background:#292633!important;border:1px solid #49415f!important;
+ box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
+ animation:none!important;border-radius:9px;color:#c5b8f4;
+}
+.sh-float small{color:#9692a5}
+.saved{color:#78cba5}
+.authscreen{background:#090a0f!important}
+.authcard{background:#191c24!important;border:1px solid #303541!important;box-shadow:none!important}
+.authcard p{color:#a4aaba}
+.modal{backdrop-filter:none!important}
+body[data-theme="light"]{
+ --bg:#f2f3f7;--side:#fff;--card:#fff;--card2:#f7f7fb;
+ --line:#e1e3eb;--txt:#252837;--muted:#737b8d;
+ background:#f2f3f7!important;color:#252837!important;
+}
+body[data-theme="light"] .sidebar{background:#fff!important;border-color:#e4e6ed}
+body[data-theme="light"] .main{background:#f2f3f7}
+body[data-theme="light"] .top{border-color:#e1e3eb}
+body[data-theme="light"] .stat,body[data-theme="light"] .panel{
+ background:#fff!important;border-color:#e2e4eb!important;box-shadow:0 2px 8px #25283708!important;
+}
+body[data-theme="light"] .panelhead h2,body[data-theme="light"] .stat{color:#252837}
+body[data-theme="light"] .nav button{color:#687083}
+body[data-theme="light"] .nav button:hover,body[data-theme="light"] .nav button.active{background:#f0edfa!important;color:#7259c4!important}
+body[data-theme="light"] .field,body[data-theme="light"] input,body[data-theme="light"] select,body[data-theme="light"] textarea{background:#fff!important;color:#252837!important;border-color:#dfe2ea!important}
+body[data-theme="light"] .sh-hero{background:#282536!important;border-color:#39334e}
+body[data-theme="light"] .ghost{background:#f3f1f9!important;color:#554b72!important;border-color:#e3deef!important}
+body[data-theme="light"] .authscreen{background:#f2f3f7!important}
+body[data-theme="light"] .authcard{background:#fff!important}
+@media(max-width:950px){
+ .app{grid-template-columns:1fr}
+ .sidebar{z-index:50}
+ .main{padding:20px 14px}
+}
+@media(max-width:650px){
+ .top{gap:14px}.topright{gap:7px}
+ .sh-hero{min-height:230px}
+ .sh-orbit{opacity:.35;right:-110px}
+ .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(prefers-reduced-motion:reduce){
+ *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+}
+</style>
+
 </head>
 <body>
 <div class="authscreen"><div class="authcard"><div class="logo" style="margin-bottom:16px">SH</div><div class="eyebrow">SPONSOR MANAGEMENT WORKSPACE</div><h1>Masuk ke SponsorHub</h1><p>Gunakan akun anggota panitia yang sudah dibuat di Supabase Auth. Pendaftaran publik tidak disediakan.</p><form id="loginForm"><label for="loginEmail">Email anggota</label><input class="field" id="loginEmail" type="email" autocomplete="username" required placeholder="nama@email.com"><label for="loginPassword">Password</label><div class="password-wrap"><input class="field" id="loginPassword" type="password" autocomplete="current-password" required placeholder="Password akun"><button class="ghost sm password-toggle" id="togglePassword" type="button" aria-label="Tampilkan password">Tampilkan</button></div><button id="loginBtn" type="submit">Masuk ke Workspace</button><div class="autherr" id="loginError"></div></form><p style="font-size:11px;margin-top:18px">Akses hanya untuk anggota yang akunnya telah diundang/dibuat oleh admin Supabase.</p></div></div>
