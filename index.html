@@ -274,237 +274,31 @@ body[data-theme="light"] .pipeline-donut:before{border:1px solid #eee9f4}
   *,*:before,*:after{animation:none!important;transition:none!important}
 }
 
-
-/* SponsorHub CRM top navigation + compact executive dashboard */
-:root{--bg:#090a0f;--side:#11131b;--card:#191c24;--card2:#20242e;--line:#2a2e38;--txt:#f2f0f8;--muted:#a3a0b1;--blue:#8b72ee;--purple:#b7a6ff;--cyan:#b7a6ff;--purple-main:#8b72ee;--purple-deep:#6f58ca}
-body{background:var(--bg);font-family:Inter,system-ui,sans-serif}
-.app{display:block;min-height:100vh}.workspace-header{height:68px;position:sticky;top:0;z-index:30;display:flex;align-items:center;gap:22px;padding:0 24px;background:rgba(15,17,24,.97);border-bottom:1px solid var(--line)}
-.header-brand{display:flex;align-items:center;gap:10px;min-width:210px}.header-brand .logo{width:34px;height:34px;border-radius:8px;background:#8b72ee;box-shadow:none}.header-brand b{display:block;font-size:15px}.header-brand small{display:block;color:var(--muted);font-size:10px}.main-segments{display:flex;align-items:center;gap:4px;flex:1;min-width:0}.segment{background:transparent;color:#aaa6b8;padding:11px 14px;border-radius:8px;font-size:12px;font-weight:650;white-space:nowrap;box-shadow:none;position:relative}.segment:hover{background:#242330;transform:none;box-shadow:none}.segment.active{background:rgba(139,114,238,.16);color:#f5f1ff}.segment.active:after{content:"";position:absolute;left:14px;right:14px;bottom:-9px;height:2px;background:#8b72ee;box-shadow:0 0 9px #8b72ee}
-.header-tools{display:flex;align-items:center;gap:7px;min-width:0}.header-tools .nav-search-wrap{position:relative;width:185px}.header-tools .field{width:100%;padding:8px 10px;font-size:11px}.header-tools .saved{font-size:10px;padding:6px 8px;white-space:nowrap}.header-tools button{white-space:nowrap}.context-ribbon{height:43px;display:flex;align-items:center;justify-content:space-between;padding:0 25px;background:#12141c;border-bottom:1px solid var(--line)}.context-links{display:flex;align-items:center;gap:7px;min-width:0}.context-link{padding:6px 11px;background:transparent;color:#a9a5b5;border-radius:6px;font-size:11px;box-shadow:none}.context-link:hover,.context-link.active{background:#242130;color:#f4f0ff;transform:none;box-shadow:none}.ribbon-meta{font-size:11px;color:var(--muted)}.ribbon-count{margin-left:7px;border-radius:20px;padding:1px 6px;background:#8e3d4b;color:#fff;font-size:9px}.ribbon-count.zero{background:#34323d;color:#aaa}.main{max-width:1700px;padding:20px 25px 35px}.page-heading{display:flex;align-items:baseline;gap:12px;margin:0 0 16px;padding:0 2px}.page-heading .eyebrow{font-size:10px;color:#a997f7}.page-heading h1{font-size:20px;margin:0}.page-heading p{font-size:11px;margin:0}.command-strip{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:15px 18px;margin-bottom:13px;border:1px solid #3a3355;border-radius:12px;background:linear-gradient(105deg,#211d32,#191c24 65%)}.command-label{font-size:9px;letter-spacing:1.1px;color:#b7a6ff;font-weight:800}.command-strip h2{font-size:17px;margin:3px 0 1px}.command-strip p{font-size:11px;color:#b6b1c3;margin:0}.command-actions{display:flex;gap:7px;flex-wrap:wrap}.command-actions button{padding:8px 11px;font-size:11px;border-radius:7px}.command-actions .ghost{background:#252330;border-color:#3d394a;color:#e3def0}
-.stats.dashboard-kpis{gap:11px;margin-bottom:13px}.dashboard-kpis .stat{min-height:116px;padding:14px 15px;overflow:hidden;background:#191c24;border:1px solid #2a2e38;border-radius:10px;box-shadow:none}.dashboard-kpis .stat strong{font-size:24px;position:relative;z-index:1}.dashboard-kpis .stat small{font-size:10px;position:relative;z-index:1}.micro-spark{position:absolute;right:9px;bottom:7px;width:95px;height:36px;opacity:.22;fill:none;stroke:#b7a6ff;stroke-width:2}.accepted-stat .mini-split{display:flex;gap:6px;margin-top:5px;position:relative;z-index:2}.mini-split span{font-size:9px;padding:3px 6px;border-radius:5px;background:#292638;color:#c9bdf5}.mini-split b{color:#fff;margin-left:3px}.target-progress{margin-top:6px;position:relative;z-index:2;max-width:230px}.target-progress>div:first-child{display:flex;justify-content:space-between;font-size:9px;color:#b8b2c7}.target-progress>div:first-child b{color:#c7b8ff}.target-track,.leader-track{height:5px;background:#30313d;border-radius:10px;overflow:hidden}.target-track i,.leader-track i{display:block;height:100%;background:#8b72ee;border-radius:inherit}.target-progress>small{font-size:9px;color:#9893a6}
-.dashboard-main-grid{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(350px,.92fr);gap:13px}.dashboard-panel,.dashboard-bottom-grid .panel{margin:0;background:#191c24;border:1px solid #2a2e38;border-radius:10px;box-shadow:none;padding:15px}.panelhead{margin-bottom:10px}.panelhead h2{font-size:14px}.panelhead p{font-size:10px}.drop-badge{background:#39242b;color:#f0a4af;border:1px solid #68404a;padding:6px 9px;border-radius:6px;font-size:10px;box-shadow:none}.drop-badge:hover{background:#4a2b34;transform:none;box-shadow:none}.pipeline-split{display:block}.pipeline-funnel{display:grid;gap:2px}.pipeline-row{display:grid;grid-template-columns:8px minmax(110px,1fr) 30px minmax(70px,1.2fr) 34px;align-items:center;gap:9px;width:100%;padding:9px 7px;border:0;border-bottom:1px solid #2b2e38;border-radius:5px;background:transparent;color:var(--txt);text-align:left;box-shadow:none;cursor:pointer}.pipeline-row:hover{background:#232630;transform:none;box-shadow:none}.stage-mark{width:7px;height:23px;border-radius:4px;background:#64748b}.stage-1{background:#60a5fa}.stage-2{background:#fbbf24}.stage-3{background:#34d399}.pipeline-stage-name{font-size:11px}.pipeline-count{font-size:14px}.pipeline-track{height:5px;background:#30313d;border-radius:8px;overflow:hidden}.pipeline-fill{height:100%;display:block;border-radius:8px;background:#8b72ee}.stage-fill-0{background:#64748b}.stage-fill-1{background:#60a5fa}.stage-fill-2{background:#fbbf24}.stage-fill-3{background:#34d399}.pipeline-row small{font-size:9px;color:#aaa5b7;text-align:right}.pipeline-analytics{display:flex;align-items:center;justify-content:center;gap:22px;padding:12px 4px 1px;border-top:1px solid #2a2e38;margin-top:9px}.pipeline-donut{width:112px;height:112px;box-shadow:none}.pipeline-donut:before{background:#191c24;border:0}.donut-center strong{font-size:20px}.donut-center small{font-size:9px}.donut-legend{min-width:155px}.donut-legend-item{font-size:10px;padding:4px 0}.followup-panel #todo{max-height:320px;overflow:auto}.task-row{display:flex;justify-content:space-between;align-items:center;gap:8px;padding:9px 0;border-bottom:1px solid #2b2e38}.task-row:last-child{border:0}.task-main{display:grid;gap:2px;min-width:0}.task-main b{font-size:11px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.task-main small{font-size:9px;color:#a29daf}.urgency{width:max-content;font-size:8px;font-weight:750;color:#b7a6ff;background:#302943;padding:2px 6px;border-radius:4px}.urgency.late{color:#ffadb6;background:#46272e}.urgency.today{color:#f5d38b;background:#41351f}.task-actions{display:flex;align-items:center;gap:6px;flex-shrink:0}.task-actions a{font-size:9px!important;color:#b7a6ff!important}.task-actions button{font-size:9px;padding:5px 7px}.dashboard-bottom-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-top:13px}.leader-row{padding:7px 0;border-bottom:1px solid #2b2e38}.leader-head{display:flex;justify-content:space-between;gap:8px;margin-bottom:5px;font-size:10px}.leader-head span{color:#a8a3b3;font-size:9px}.category-row{display:grid;grid-template-columns:100px 1fr 24px;gap:9px;align-items:center;padding:7px 0;border-bottom:1px solid #2b2e38;font-size:10px}.category-row b{text-align:right}.empty{font-size:11px;padding:15px}
-body[data-theme="light"]{--bg:#f5f4fa;--card:#fff;--line:#e5e0ed;--txt:#292538;--muted:#746e82;background:#f5f4fa;color:#292538}body[data-theme="light"] .workspace-header{background:#fff;border-color:#e5e0ed}body[data-theme="light"] .context-ribbon{background:#faf9fd;border-color:#e5e0ed}body[data-theme="light"] .segment{color:#716b80}body[data-theme="light"] .segment.active{color:#49377c;background:rgba(139,114,238,.12)}body[data-theme="light"] .context-link{color:#716b80}body[data-theme="light"] .context-link.active,body[data-theme="light"] .context-link:hover{background:#eee9fa;color:#513b91}body[data-theme="light"] .command-strip{background:linear-gradient(105deg,#eee9fa,#fff);border-color:#e0d7f3}body[data-theme="light"] .command-strip p{color:#6d667b}body[data-theme="light"] .command-actions .ghost{background:#f4f1fa;color:#51466c;border-color:#e1daed}body[data-theme="light"] .dashboard-kpis .stat,body[data-theme="light"] .dashboard-panel,body[data-theme="light"] .dashboard-bottom-grid .panel{background:#fff;border-color:#e5e0ed}body[data-theme="light"] .pipeline-row{border-bottom-color:#eeeaf4;color:#292538}body[data-theme="light"] .pipeline-row:hover{background:#f7f4fc}body[data-theme="light"] .pipeline-analytics{border-color:#eeeaf4}body[data-theme="light"] .pipeline-donut:before{background:#fff}body[data-theme="light"] .task-row,body[data-theme="light"] .leader-row,body[data-theme="light"] .category-row{border-color:#eeeaf4}body[data-theme="light"] .task-main small,body[data-theme="light"] .leader-head span{color:#746e82}body[data-theme="light"] .leader-track,body[data-theme="light"] .target-track{background:#ebe7f2}body[data-theme="light"] .mini-split span{background:#f0ebfa;color:#604b91}body[data-theme="light"] .mini-split b{color:#4a3b69}body[data-theme="light"] .drop-badge{background:#fff0f1;color:#a33c4b;border-color:#f0cbd0}
-@media(max-width:1100px){.workspace-header{gap:10px;padding:0 14px}.header-brand{min-width:155px}.header-tools .nav-search-wrap{width:145px}.header-tools .saved{display:none}.main{padding:17px 14px}}
-@media(max-width:850px){.workspace-header{height:auto;min-height:64px;flex-wrap:wrap;padding:9px 12px;gap:8px}.header-brand{min-width:130px}.main-segments{order:3;flex-basis:100%;overflow-x:auto;scrollbar-width:none;padding:1px 0 4px}.main-segments::-webkit-scrollbar{display:none}.header-tools{margin-left:auto}.header-tools .nav-search-wrap{width:130px}.context-ribbon{overflow-x:auto;scrollbar-width:none;padding:0 12px}.context-links{white-space:nowrap}.context-ribbon::-webkit-scrollbar{display:none}.dashboard-main-grid{grid-template-columns:1fr}.dashboard-bottom-grid{grid-template-columns:1fr}}
-@media(max-width:560px){.header-tools .nav-search-wrap{width:100%;order:5;flex-basis:100%}.header-tools{display:flex;flex-wrap:wrap;justify-content:flex-end}.header-tools .saved{display:inline-block}.header-tools button{font-size:9px}.page-heading{display:block}.page-heading p{margin-top:3px}.command-strip{align-items:flex-start;flex-direction:column}.command-actions{width:100%}.command-actions button{flex:1}.stats.dashboard-kpis{grid-template-columns:1fr 1fr}.dashboard-kpis .stat{min-height:120px}.pipeline-row{grid-template-columns:7px minmax(90px,1fr) 24px minmax(45px,.8fr) 28px;gap:6px}.pipeline-analytics{gap:12px}.pipeline-donut{width:96px;height:96px}.task-row{align-items:flex-start;flex-direction:column}.task-actions{width:100%;justify-content:flex-end}}
-@media(prefers-reduced-motion:reduce){.segment,.context-link,.pipeline-row,.task-row{transition:none!important}}
-
-</style>
-<style id="sponsorhub-spatial-dashboard">
-/* SponsorHub spatial glass direction — dashboard-first visual layer */
-:root{--sh-violet:#8b72ee;--sh-lilac:#c7baff;--sh-glass:rgba(255,255,255,.075)}
-body{background:radial-gradient(ellipse at 78% 8%,rgba(139,114,238,.22),transparent 32%),radial-gradient(ellipse at 8% 42%,rgba(75,139,190,.13),transparent 34%),var(--bg)}
-.sidebar{backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);background:rgba(8,14,29,.82)}
-.main{max-width:1680px;padding:clamp(18px,2.4vw,36px)}
-.top{padding:4px 2px 18px;border-bottom:1px solid rgba(170,160,220,.14)}
-.top h1{font-weight:800;letter-spacing:-.045em}
-.eyebrow{color:#b7a7ff;letter-spacing:2px}
-.stat,.panel{background:linear-gradient(145deg,rgba(34,38,68,.78),rgba(16,23,43,.82));border:1px solid rgba(197,185,255,.17);box-shadow:0 18px 50px rgba(0,0,0,.17),inset 0 1px 0 rgba(255,255,255,.08);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
-.stat{position:relative;overflow:hidden;border-radius:20px;padding:19px 18px;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s}
-.stat:after{content:"";position:absolute;width:110px;height:110px;right:-44px;top:-52px;border-radius:50%;background:radial-gradient(circle,rgba(168,147,255,.2),transparent 70%);pointer-events:none}
-.stat:hover{transform:translateY(-3px);border-color:rgba(197,185,255,.38)}
-.stat strong{font-size:clamp(25px,2.2vw,32px);letter-spacing:-.04em}
-.panel{border-radius:21px;padding:19px}
-.dashboard-grid{align-items:stretch}
-.dashboard-panel{min-height:270px}
-.panelhead h2{font-size:15px;letter-spacing:-.02em}
-.notice{background:rgba(139,114,238,.10);border-color:rgba(180,163,255,.22);border-radius:14px}
-button{transition:transform .25s ease,filter .25s ease,box-shadow .25s ease}
-button:not(.ghost){box-shadow:0 8px 22px rgba(113,91,218,.18)}
-.field{background:rgba(9,15,31,.62)}
-.sh-hero{position:relative;isolation:isolate;overflow:hidden;min-height:300px;margin:0 0 17px;padding:clamp(24px,3vw,42px);border-radius:26px;border:1px solid rgba(204,194,255,.22);background:linear-gradient(112deg,rgba(34,31,67,.96) 0%,rgba(37,43,78,.88) 48%,rgba(31,48,70,.72) 100%);box-shadow:0 24px 65px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.14);display:flex;align-items:center;justify-content:space-between;gap:20px}
-.sh-hero:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 78% 50%,rgba(166,147,255,.25),transparent 36%),linear-gradient(90deg,rgba(8,12,28,.2),transparent 65%)}
-.sh-hero-copy{position:relative;z-index:2;max-width:540px}
-.sh-kicker{font-size:10px;font-weight:800;letter-spacing:2px;color:#c8bcff;display:flex;align-items:center;gap:9px;margin-bottom:18px}
-.sh-live-dot{width:7px;height:7px;border-radius:50%;background:#80e4bd;box-shadow:0 0 12px #80e4bd}
-.sh-hero h2{font-size:clamp(29px,4vw,48px);line-height:1.04;letter-spacing:-.055em;margin:0 0 13px;color:#fff}
-.sh-hero h2 em{font-style:normal;color:#c7baff}
-.sh-hero p{max-width:450px;color:rgba(239,237,255,.72);font-size:13px;line-height:1.7;margin:0}
-.sh-hero-actions{display:flex;align-items:center;gap:15px;margin-top:22px;flex-wrap:wrap}
-.sh-hero-note{font-size:11px;color:rgba(239,237,255,.58)}
-.sh-orbit{position:relative;width:min(43%,440px);height:260px;flex:none}
-.sh-orbit-word{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);font-size:clamp(48px,8vw,105px);font-weight:900;letter-spacing:-.09em;color:rgba(255,255,255,.075);white-space:nowrap}
-.sh-orbit-ring{position:absolute;left:50%;top:50%;border:1px solid rgba(218,211,255,.24);border-radius:50%;transform:translate(-50%,-50%) rotate(-24deg)}
-.sh-ring-one{width:235px;height:235px}.sh-ring-two{width:310px;height:170px;transform:translate(-50%,-50%) rotate(32deg);border-color:rgba(139,203,255,.22)}
-.sh-orbit-core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:92px;height:92px;border-radius:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(145deg,rgba(255,255,255,.25),rgba(180,165,255,.12));border:1px solid rgba(255,255,255,.42);box-shadow:0 15px 45px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.55);backdrop-filter:blur(18px);color:#fff}
-.sh-orbit-core span{font-size:28px;font-weight:900;letter-spacing:-2px}.sh-orbit-core small{font-size:8px;letter-spacing:3px;color:#d8d0ff}
-.sh-float{position:absolute;padding:10px 13px;border-radius:14px;background:rgba(247,245,255,.13);border:1px solid rgba(255,255,255,.26);box-shadow:0 12px 30px rgba(0,0,0,.16);backdrop-filter:blur(18px);color:#d7ccff;font-size:12px;animation:shFloat 5s ease-in-out infinite}
-.sh-float b{color:#fff;margin-left:5px}.sh-float small{display:block;color:rgba(255,255,255,.56);font-size:9px;margin:3px 0 0 19px}
-.sh-float-a{top:22px;right:5px}.sh-float-b{bottom:19px;left:2px;animation-delay:-2.2s}
-@keyframes shFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
-body[data-theme="light"]{background:radial-gradient(ellipse at 78% 8%,rgba(139,114,238,.13),transparent 32%),#f3f1f8;color:#25233a}
-body[data-theme="light"] .stat,body[data-theme="light"] .panel{background:rgba(255,255,255,.78);border-color:rgba(117,99,174,.15);box-shadow:0 14px 40px rgba(50,40,90,.07),inset 0 1px 0 #fff}
-body[data-theme="light"] .sidebar{background:rgba(250,249,255,.9)}
-body[data-theme="light"] .field{background:#fff;color:#29263c}
-@media(max-width:900px){.sh-orbit{width:38%;transform:scale(.88)}.sh-hero{min-height:270px}}
-@media(max-width:650px){.sh-hero{padding:23px;min-height:0}.sh-orbit{position:absolute;right:-90px;bottom:-55px;width:260px;height:220px;opacity:.65;transform:scale(.8);transform-origin:bottom right}.sh-hero-copy{max-width:100%}.sh-hero p{max-width:90%}.sh-hero h2{font-size:32px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat{padding:14px}.stat strong{font-size:24px}.dashboard-grid{grid-template-columns:1fr}}
-@media(prefers-reduced-motion:reduce){.sh-float{animation:none}button,.stat{transition:none}}
-</style>
-
-<style id="sponsorhub-darkpan-theme">
-/* DarkPan-inspired SponsorHub: solid surfaces, clear hierarchy, low-cost rendering */
-:root{
- --bg:#090a0f;--side:#191c24;--card:#191c24;--card2:#20242e;
- --line:#303541;--txt:#f4f5f8;--muted:#9299aa;
- --blue:#8b72ee;--purple:#a18cf4;--cyan:#67b8d5;
- --green:#55c99a;--red:#ef7888;--yellow:#e8bd72;
- --primary:#8b72ee;--secondary:#191c24;--dark:#090a0f;--light:#9299aa;
-}
-html{scroll-behavior:smooth}
-body{
- background:var(--bg)!important;color:var(--txt);
- background-image:none!important;
-}
-.app{grid-template-columns:250px minmax(0,1fr)}
-.sidebar{
- background:#191c24!important;border-right:1px solid #2a2e38;
- box-shadow:none;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
-}
-.main{background:#090a0f;max-width:none;padding:26px clamp(16px,2.2vw,32px)}
-.brand{padding-bottom:22px}
-.logo{background:#8b72ee!important;box-shadow:none!important;border-radius:9px}
-.navcap{color:#777f91;letter-spacing:1.1px}
-.nav button{
- border-radius:7px!important;color:#a6adbd;
- background:transparent!important;box-shadow:none!important;
- transition:background-color .16s ease,color .16s ease!important;
-}
-.nav button:hover,.nav button.active{
- background:#292d38!important;color:#b7a6ff!important;
- transform:none!important;filter:none!important;
-}
-.nav .ico{background:#242833!important;border-radius:7px}
-.sidefoot{color:#747d8e}
-.top{
- border-bottom:1px solid #282d38;padding:0 0 20px;margin-bottom:22px;
-}
-.top h1{font-size:clamp(24px,2.3vw,31px);letter-spacing:-.035em}
-.eyebrow{color:#a995ff;letter-spacing:1.5px}
-.muted{color:#9299aa}
-.stat,.panel{
- background:#191c24!important;border:1px solid #2b303b!important;
- box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
- border-radius:10px!important;
-}
-.stat{padding:18px;min-height:124px;transition:border-color .16s ease!important}
-.stat:after{display:none!important}
-.stat:hover{transform:none!important;border-color:#62548d!important}
-.stat strong{font-size:clamp(24px,2vw,30px);letter-spacing:-.035em}
-.panel{padding:19px}
-.panelhead h2{font-size:15px;color:#f0f1f5}
-.dashboard-grid{gap:18px}
-.dashboard-panel{min-height:250px}
-.notice{background:#252333!important;border:1px solid #49405f!important;border-radius:8px}
-button{
- box-shadow:none!important;transition:background-color .16s ease,border-color .16s ease,color .16s ease!important;
-}
-button:hover{transform:none!important;filter:brightness(1.08)}
-button:not(.ghost){background:#8b72ee;color:#fff}
-button:not(.ghost):hover{background:#9a84f2}
-.ghost{background:#252a35!important;border:1px solid #373d49!important;color:#d6d9e2!important}
-.danger{background:#39242c!important;border-color:#69404c!important}
-.field,input,select,textarea{
- background:#10131a!important;color:#edf0f6!important;border:1px solid #343a47!important;
- box-shadow:none!important;border-radius:7px!important;
-}
-.field:focus,input:focus,select:focus,textarea:focus{outline:2px solid #8b72ee55;border-color:#8b72ee!important}
-.sh-hero{
- min-height:255px;margin-bottom:18px;padding:clamp(22px,2.8vw,36px);
- border-radius:12px;border:1px solid #39334e;
- background:#20212b!important;box-shadow:none!important;
-}
-.sh-hero:before{background:linear-gradient(100deg,rgba(139,114,238,.12),transparent 65%)!important}
-.sh-kicker{color:#b6a6f7;letter-spacing:1.5px}
-.sh-live-dot{box-shadow:none}
-.sh-hero h2{font-size:clamp(28px,3.3vw,42px)}
-.sh-hero h2 em{color:#b6a6f7}
-.sh-hero p{color:#aeb4c2}
-.sh-orbit{opacity:.9}
-.sh-orbit-word{color:rgba(255,255,255,.045)}
-.sh-orbit-ring{border-color:rgba(180,163,255,.18)}
-.sh-orbit-core{
- background:#302b42!important;border:1px solid #62568a!important;
- box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
- border-radius:16px;color:#fff;
-}
-.sh-orbit-core small{color:#c3b8ed}
-.sh-float{
- background:#292633!important;border:1px solid #49415f!important;
- box-shadow:none!important;backdrop-filter:none!important;-webkit-backdrop-filter:none!important;
- animation:none!important;border-radius:9px;color:#c5b8f4;
-}
-.sh-float small{color:#9692a5}
-.saved{color:#78cba5}
-.authscreen{background:#090a0f!important}
-.authcard{background:#191c24!important;border:1px solid #303541!important;box-shadow:none!important}
-.authcard p{color:#a4aaba}
-.modal{backdrop-filter:none!important}
-body[data-theme="light"]{
- --bg:#f2f3f7;--side:#fff;--card:#fff;--card2:#f7f7fb;
- --line:#e1e3eb;--txt:#252837;--muted:#737b8d;
- background:#f2f3f7!important;color:#252837!important;
-}
-body[data-theme="light"] .sidebar{background:#fff!important;border-color:#e4e6ed}
-body[data-theme="light"] .main{background:#f2f3f7}
-body[data-theme="light"] .top{border-color:#e1e3eb}
-body[data-theme="light"] .stat,body[data-theme="light"] .panel{
- background:#fff!important;border-color:#e2e4eb!important;box-shadow:0 2px 8px #25283708!important;
-}
-body[data-theme="light"] .panelhead h2,body[data-theme="light"] .stat{color:#252837}
-body[data-theme="light"] .nav button{color:#687083}
-body[data-theme="light"] .nav button:hover,body[data-theme="light"] .nav button.active{background:#f0edfa!important;color:#7259c4!important}
-body[data-theme="light"] .field,body[data-theme="light"] input,body[data-theme="light"] select,body[data-theme="light"] textarea{background:#fff!important;color:#252837!important;border-color:#dfe2ea!important}
-body[data-theme="light"] .sh-hero{background:#282536!important;border-color:#39334e}
-body[data-theme="light"] .ghost{background:#f3f1f9!important;color:#554b72!important;border-color:#e3deef!important}
-body[data-theme="light"] .authscreen{background:#f2f3f7!important}
-body[data-theme="light"] .authcard{background:#fff!important}
-@media(max-width:950px){
- .app{grid-template-columns:1fr}
- .sidebar{z-index:50}
- .main{padding:20px 14px}
-}
-@media(max-width:650px){
- .top{gap:14px}.topright{gap:7px}
- .sh-hero{min-height:230px}
- .sh-orbit{opacity:.35;right:-110px}
- .stats{grid-template-columns:repeat(2,minmax(0,1fr))}
-}
-@media(prefers-reduced-motion:reduce){
- *,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
-}
-</style>
-
-</head>
+</style></head>
 <body>
 <div class="authscreen"><div class="authcard"><div class="logo" style="margin-bottom:16px">SH</div><div class="eyebrow">SPONSOR MANAGEMENT WORKSPACE</div><h1>Masuk ke SponsorHub</h1><p>Gunakan akun anggota panitia yang sudah dibuat di Supabase Auth. Pendaftaran publik tidak disediakan.</p><form id="loginForm"><label for="loginEmail">Email anggota</label><input class="field" id="loginEmail" type="email" autocomplete="username" required placeholder="nama@email.com"><label for="loginPassword">Password</label><div class="password-wrap"><input class="field" id="loginPassword" type="password" autocomplete="current-password" required placeholder="Password akun"><button class="ghost sm password-toggle" id="togglePassword" type="button" aria-label="Tampilkan password">Tampilkan</button></div><button id="loginBtn" type="submit">Masuk ke Workspace</button><div class="autherr" id="loginError"></div></form><p style="font-size:11px;margin-top:18px">Akses hanya untuk anggota yang akunnya telah diundang/dibuat oleh admin Supabase.</p></div></div>
 <div class="app">
-<header class="workspace-header">
-  <div class="header-brand"><div class="logo">SH</div><div><b>SponsorHub</b><small>Dies Natalis Teknik Elektro</small></div></div>
-  <nav class="main-segments" aria-label="Navigasi utama">
-    <button class="segment active" data-category="overview">Ringkasan</button>
-    <button class="segment" data-category="prospects">Database Prospek</button>
-    <button class="segment" data-category="collab">Kolaborasi & AI</button>
-    <button class="segment" data-category="manage">Manajemen</button>
-  </nav>
-  <div class="header-tools"><div class="nav-search-wrap"><input id="navSearch" class="field" type="search" placeholder="Cari sponsor / menu..." autocomplete="off"><div id="navSearchResults" class="nav-search-results" hidden></div></div><button class="ghost sm theme-btn" id="themeToggle" title="Ganti tema">☀️ Terang</button><span class="saved" id="saveState">● Menyiapkan koneksi</span><button class="ghost sm" id="backupBtn">Backup JSON</button><button class="ghost sm" id="saveFileBtn">Simpan File</button><button class="ghost sm" id="logoutBtn">Keluar</button></div>
-</header>
-<div class="context-ribbon"><div id="contextLinks" class="context-links"><span class="ribbon-meta">Workspace sponsorship · Memuat status cloud</span></div><span class="clouduser" id="cloudUser"></span></div>
+<aside class="sidebar"><div class="brand"><div class="logo">SH</div><div><b>SponsorHub</b><small>Dies Natalis Teknik Elektro</small></div></div><div class="nav-search-wrap"><input id="navSearch" class="field" type="search" placeholder="⌕ Cari sponsor / menu..." autocomplete="off"><div id="navSearchResults" class="nav-search-results" hidden></div></div><div class="navcap">MENU UTAMA</div><nav class="nav">
+<button class="active" data-page="dashboard"><span class="ico">▦</span><span class="navlabel">Dashboard</span></button>
+<button data-page="sponsors"><span class="ico">◉</span><span class="navlabel">List Sponsor</span></button>
+<button data-page="umkm"><span class="ico">⌂</span><span class="navlabel">List Sponsor UMKM</span></button>
+<button data-page="held"><span class="ico">♙</span><span class="navlabel">Pemegang Sponsor</span></button>
+<button data-page="followups"><span class="ico">◷</span><span class="navlabel">Follow-up & Reminder</span></button>
+<button data-page="ai"><span class="ico">✦</span><span class="navlabel">Tanya AI Sponsor</span></button>
+<button data-page="chat"><span class="ico">▤</span><span class="navlabel">Grup Diskusi</span></button>
+<button data-page="finance"><span class="ico">▤</span><span class="navlabel">Keuangan & RAB</span></button>
+<button data-page="team"><span class="ico">♙</span><span class="navlabel">Penanggung Jawab</span></button>
+</nav><div class="sidefoot">Database bersama Supabase.<br>Perubahan disinkronkan untuk anggota login.</div></aside>
 <main class="main">
-<header class="page-heading"><div class="eyebrow">SPONSOR MANAGEMENT WORKSPACE</div><h1 id="title">Dashboard</h1><p class="muted">Ruang kendali prospek, kolaborasi, dan keuangan sponsorship.</p></header>
+<header class="top"><div><div class="eyebrow">SPONSOR MANAGEMENT WORKSPACE</div><h1 id="title">Dashboard</h1><div class="muted">Ruang kerja tim untuk mengelola prospek, komunikasi, penanggung jawab, dan arus kas sponsorship.</div></div><div class="topright"><button class="ghost sm" id="sidebarToggle" title="Sembunyikan / tampilkan navigasi">☰ Navigasi</button><button class="ghost sm theme-btn" id="themeToggle" title="Ganti tema">☀️ Terang</button><span class="saved" id="saveState">● Menyiapkan koneksi</span><span class="clouduser" id="cloudUser"></span><button class="ghost sm" id="logoutBtn">Keluar</button><button class="ghost" id="backupBtn">↓ Backup JSON</button><button id="saveFileBtn">Simpan ke File</button></div></header>
 <section class="page active" id="dashboard">
-<div class="command-strip"><div><span class="command-label">SPONSORSHIP DESK</span><h2 id="commandGreeting">Halo Tim Sponsor</h2><p id="commandSummary">Pantau prospek dan tindak lanjut tim hari ini.</p></div><div class="command-actions"><button data-go="sponsors">＋ Tambah Prospek</button><button class="ghost" data-action="add-tx">＋ Catat Pemasukan</button><button class="ghost" data-go="ai">✦ Tanya AI</button></div></div>
-<div class="stats dashboard-kpis">
- <div class="stat"><small>Total calon sponsor</small><strong id="total">0</strong><small>Seluruh database</small><svg class="micro-spark" viewBox="0 0 120 42" aria-hidden="true"><path d="M2 34 L18 28 31 31 46 16 60 22 75 10 90 17 105 5 118 9"/></svg></div>
- <div class="stat"><small>Sudah dihubungi</small><strong id="contacted">0</strong><small>Termasuk menunggu jawaban</small><svg class="micro-spark" viewBox="0 0 120 42" aria-hidden="true"><path d="M2 35 L20 30 34 32 48 21 63 24 78 12 94 16 108 7 118 4"/></svg></div>
- <div class="stat accepted-stat"><small>Sponsor diterima</small><strong id="accepted">0</strong><small>Status diterima</small><div class="mini-split" id="acceptedSplit"></div><svg class="micro-spark" viewBox="0 0 120 42" aria-hidden="true"><path d="M2 36 L18 34 32 25 47 28 62 17 77 20 92 8 108 12 118 3"/></svg></div>
- <div class="stat income-stat"><small>Total pemasukan</small><strong id="income">Rp0</strong><small>Dari transaksi tercatat</small><div class="target-progress"><div><span>Target RAB</span><b id="rabPercent">0%</b></div><div class="target-track"><i id="rabBar"></i></div><small id="rabText">Target Rp15.000.000</small></div><svg class="micro-spark" viewBox="0 0 120 42" aria-hidden="true"><path d="M2 36 L17 32 32 34 47 22 62 25 77 14 91 18 105 8 118 2"/></svg></div>
-</div>
-<div class="dashboard-main-grid"><div class="panel dashboard-panel pipeline-panel"><div class="panelhead"><div><h2>Pipeline sponsorship</h2><p>Konversi prospek dari pendekatan hingga diterima</p></div><button id="dropOffFilter" class="drop-badge" type="button">Ditolak · 0</button></div><div id="pipeline"></div><div id="pipelineDonut"></div></div><div class="panel dashboard-panel followup-panel"><div class="panelhead"><div><h2>Perlu follow-up</h2><p>Prioritas tindak lanjut berdasarkan tanggal</p></div><button class="ghost sm" data-go="followups">Lihat semua</button></div><div id="todo"></div></div></div>
-<div class="dashboard-bottom-grid"><div class="panel"><div class="panelhead"><div><h2>Performa PIC</h2><p>Prospek yang ditangani dan rasio ACC</p></div><button class="ghost sm" data-go="team">Kelola tim</button></div><div id="picLeaderboard"></div></div><div class="panel"><div class="panelhead"><div><h2>Sebaran kategori potensial</h2><p>Komposisi prospek berdasarkan kategori usaha</p></div></div><div id="categoryBreakdown"></div></div></div>
+<div class="stats"><div class="stat"><small>Total calon sponsor</small><strong id="total">0</strong><small>Seluruh database</small></div><div class="stat"><small>Sudah dihubungi</small><strong id="contacted">0</strong><small>Termasuk menunggu jawaban</small></div><div class="stat"><small>Sponsor diterima</small><strong id="accepted">0</strong><small>Status diterima</small></div><div class="stat"><small>Total pemasukan</small><strong id="income">Rp0</strong><small>Dari transaksi tercatat</small></div></div>
+<div class="two dashboard-grid"><div class="panel dashboard-panel pipeline-panel"><div class="panelhead"><div><h2>Pipeline sponsorship</h2><p>Ringkasan status seluruh calon sponsor</p></div></div><div id="pipeline"></div><div id="pipelineDonut"></div></div><div class="panel dashboard-panel followup-panel"><div class="panelhead"><div><h2>Perlu follow-up</h2><p>Calon sponsor yang perlu ditindaklanjuti</p></div></div><div id="todo"></div></div></div>
+<div class="panel"><h2 style="margin-top:0">Alur kerja singkat</h2><div class="notice">Pilih calon sponsor → tetapkan kategori dan PIC → buat pesan pendekatan → update status komunikasi → catat transaksi jika dukungan sudah diterima.</div><div class="toolbar"><button data-go="sponsors">Buka List Sponsor</button><button class="ghost" data-go="team">Atur Penanggung Jawab</button></div></div>
 </section>
 <section class="page" id="sponsors"><div class="panel"><div class="panelhead"><div><h2>Database seluruh calon sponsor</h2><p>Edit langsung kategori, status, kontak, PIC, paket, bentuk dukungan, dan catatan.</p></div><button data-action="add-general">＋ Tambah sponsor</button></div><div class="filters"><input class="field search" id="qAll" placeholder="Cari nama toko, kontak, PIC, catatan..."><select class="field" id="fStatus"><option value="">Semua status</option></select><select class="field" id="fCategory"><option value="">Semua kategori</option></select><select class="field" id="fOwner"><option value="">Semua PIC</option></select></div><div class="sponsor-card-list" id="allRows"></div><small class="muted" id="allCount"></small></div></section>
 <section class="page" id="umkm"><div class="panel"><div class="panelhead"><div><h2>List Sponsor UMKM</h2><p>Database UMKM lokal dan generator pesan pendekatan.</p></div><button data-action="add-umkm">＋ Tambah UMKM</button></div><div class="notice">Klik tombol “Buat pesan” pada baris UMKM. Pesan akan disesuaikan dengan kategori usaha; kategori yang belum dikenali memakai template umum.</div><div class="filters"><input class="field search" id="qUmkm" placeholder="Cari nama UMKM..."><select class="field" id="uStatus"><option value="">Semua status</option></select><select class="field" id="uCategory"><option value="">Semua kategori</option></select><select class="field" id="uOwner"><option value="">Semua PIC</option></select></div><div class="sponsor-card-list" id="umkmRows"></div><small class="muted" id="umkmCount"></small></div></section>
-
+<section class="page" id="held"><div class="panel"><div class="panelhead"><div><h2>Sponsor yang dipegang anggota</h2><p>Daftar sponsor yang sudah diklaim oleh anggota sebagai PIC utama.</p></div></div><div class="filters"><input class="field search" id="qHeld" placeholder="Cari sponsor atau pemegang..."><select class="field" id="heldStatus"><option value="">Semua status</option><option>Belum dihubungi</option><option>Waiting</option><option>ACC</option><option>Ditolak</option></select></div><div class="sponsor-card-list held-card-list" id="heldRows"></div></div></section>
 <section class="page" id="followups"><div class="panel"><div class="panelhead"><div><h2>Jadwal follow-up & pengingat proposal</h2><p>Pengingat muncul berdasarkan tanggal follow-up dan tanggal proposal dikirim.</p></div><button class="ghost" data-action="check-reminders">Periksa pengingat</button></div><div id="reminderList"></div></div><div class="panel"><h2>Atur jadwal sponsor</h2><p class="muted">Jadwal diatur dari kolom follow-up pada daftar sponsor. Proposal yang dikirim juga dapat diberi tanggal pengingat.</p><button data-go="sponsors">Buka List Sponsor</button></div></section>
 <section class="page" id="ai"><div class="panel"><div class="panelhead"><div><h2>✦ Tanya AI Sponsor — Gemini</h2><p>Asisten untuk strategi pendekatan, pesan sponsor, negosiasi, follow-up, dan evaluasi.</p></div></div><div class="notice">Masukkan Gemini API key milik panitia. Key disimpan hanya di browser ini. Untuk penggunaan tim bersama, setiap anggota perlu memasukkan key masing-masing.</div><label>Gemini API Key</label><input class="field" id="geminiKey" type="password" placeholder="Masukkan Gemini API key" style="width:100%;margin:6px 0 12px"><div class="toolbar"><button data-action="save-gemini">Simpan API Key</button><button class="ghost" data-action="clear-gemini">Hapus Key</button></div><div id="aiLog" class="panel" style="max-height:360px;overflow:auto;margin-top:14px"><div class="muted">Contoh: Buatkan strategi pendekatan untuk sponsor kategori F&B dengan paket Gold.</div></div><textarea class="field" id="aiPrompt" rows="3" style="width:100%" placeholder="Tanyakan sesuatu tentang pengelolaan sponsorship..."></textarea><div class="toolbar" style="margin-top:8px"><button data-action="ask-gemini">Tanya Gemini</button></div></div></section>
 <section class="page" id="chat"><div class="panel"><div class="panelhead"><div><h2>Grup Diskusi Panitia Sponsor</h2><p>Diskusi bersama dan pembahasan sponsor tertentu.</p></div><span class="tag st2" id="chatState">Menghubungkan...</span></div><div class="toolbar"><select class="field" id="chatScope"><option value="all">Grup umum — semua anggota</option></select><input class="field" id="chatSponsor" placeholder="Nama sponsor terkait (opsional)"></div><div id="chatMessages" class="panel" style="height:360px;overflow:auto;margin-top:12px"></div><div class="toolbar"><input class="field search" id="chatInput" placeholder="Tulis pesan ke grup..."><button data-action="send-chat">Kirim</button></div></div></section>
@@ -548,8 +342,7 @@ async function loadCloud(){const {data,error}=await cloudClient.from('sponsorhub
 async function startWorkspace(session){currentUser=session.user;document.body.classList.add('authed');$('cloudUser').textContent=currentUser.email||'Anggota';$('loginError').textContent='';appReady=false;try{await loadCloud();appReady=true;$('saveState').textContent='● Terhubung ke cloud';$('geminiKey').value=localStorage.getItem('sponsorhub_gemini_key')||'';loadChat();cloudClient.channel('sponsorhub-live').on('postgres_changes',{event:'UPDATE',schema:'public',table:'sponsorhub_workspace',filter:'id=eq.main'},payload=>{if(!currentUser)return;const row=payload.new;if(row.updated_by===currentUser.id)return;if(row.updated_at&&lastCloudStamp&&row.updated_at<=lastCloudStamp)return;if(row.data&&Array.isArray(row.data.sponsors)){db=row.data;lastCloudStamp=row.updated_at;localStorage.setItem('sponsorhub_stable_v2',JSON.stringify(db));render();$('saveState').textContent='● Data anggota diperbarui';toast('Data terbaru dari anggota lain dimuat')}}).subscribe();}catch(err){console.error(err);$('saveState').textContent='! Koneksi cloud bermasalah';toast('Tidak bisa memuat workspace: '+(err.message||'cek SQL dan RLS'));}}
 
 function toast(msg){$('toast').textContent=msg;$('toast').classList.add('show');setTimeout(()=>$('toast').classList.remove('show'),2000)}
-function nav(p){if(p==='held')p='sponsors';document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===p));document.querySelectorAll('[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===p));$('title').textContent=({dashboard:'Dashboard',sponsors:'List Sponsor',umkm:'List Sponsor UMKM',followups:'Follow-up & Reminder',ai:'Tanya AI Sponsor',chat:'Grup Diskusi',finance:'Keuangan & RAB',team:'Penanggung Jawab'})[p]||'SponsorHub';updateContextNav(p);render();window.scrollTo({top:0,behavior:'smooth'})}
-function updateContextNav(page){const groups={overview:[['Ringkasan','dashboard']],prospects:[['List Sponsor','sponsors'],['List Sponsor UMKM','umkm'],['Follow-up & Reminder','followups']],collab:[['Grup Diskusi','chat'],['Tanya AI Sponsor','ai']],manage:[['Keuangan & RAB','finance'],['Penanggung Jawab','team']]};let cat='overview';for(const [k,items] of Object.entries(groups))if(items.some(x=>x[1]===page))cat=k;document.querySelectorAll('[data-category]').forEach(b=>b.classList.toggle('active',b.dataset.category===cat));const host=$('contextLinks');if(!host)return;if(cat==='overview'){host.innerHTML='<span class="ribbon-meta">Ringkasan workspace · <b id="ribbonDate"></b> · Data tersinkron melalui cloud</span>';const d=$('ribbonDate');if(d)d.textContent=new Date().toLocaleDateString('id-ID',{weekday:'long',day:'numeric',month:'long',year:'numeric'});return}host.innerHTML=groups[cat].map(([label,id])=>`<button class="context-link ${id===page?'active':''}" data-page="${id}">${label}${id==='followups'?`<span class="ribbon-count" id="ribbonDue">0</span>`:''}</button>`).join('');const due=$('ribbonDue');if(due){const today=new Date().toISOString().slice(0,10);const n=db.sponsors.filter(s=>(s.followUpDate&&s.followUpDate<=today)||(s.proposalReminderDate&&!s.proposalReplied&&s.proposalReminderDate<=today)).length;due.textContent=n;due.classList.toggle('zero',!n)}}
+function nav(p){document.querySelectorAll('.page').forEach(x=>x.classList.toggle('active',x.id===p));document.querySelectorAll('[data-page]').forEach(x=>x.classList.toggle('active',x.dataset.page===p));$('title').textContent=({dashboard:'Dashboard',sponsors:'List Sponsor',umkm:'List Sponsor UMKM',held:'Pemegang Sponsor',followups:'Follow-up & Reminder',ai:'Tanya AI Sponsor',chat:'Grup Diskusi',finance:'Keuangan & RAB',team:'Penanggung Jawab'})[p];render();window.scrollTo({top:0,behavior:'smooth'})}
 function statusOptions(v){return opt(STATUS,v,'Pilih status')}
 
 function sponsorInitials(name){
@@ -570,11 +363,11 @@ const PIPELINE_COLORS=['#64748b','#60a5fa','#fbbf24','#34d399','#fb7185'];
 function renderPipelineDonut(){
  const target=$('pipelineDonut');if(!target)return;
  const total=db.sponsors.length;
- const counts=STATUS.slice(0,4).map(status=>db.sponsors.filter(s=>(s.status||STATUS[0])===status).length);const win=total?Math.round(counts[3]/total*100):0;
+ const counts=STATUS.map(status=>db.sponsors.filter(s=>(s.status||STATUS[0])===status).length);
  let current=0;
  const segments=counts.map((count,i)=>{const pct=total?count/total*100:0;const start=current;current+=pct;return `${PIPELINE_COLORS[i]} ${start}% ${current}%`});
  const gradient=total?`conic-gradient(${segments.join(',')})`:'conic-gradient(#64748b 0% 100%)';
- target.innerHTML=`<div class="pipeline-analytics"><div class="donut-wrap"><div class="pipeline-donut" style="background:${gradient}"><div class="donut-center"><strong>${win}%</strong><small>Win rate</small></div></div></div><div class="donut-legend">${STATUS.slice(0,4).map((status,i)=>`<div class="donut-legend-item"><span class="donut-legend-label"><span class="donut-dot" style="background:${PIPELINE_COLORS[i]}"></span>${esc(status)}</span><b>${counts[i]}</b></div>`).join('')}</div></div>`;
+ target.innerHTML=`<div class="pipeline-analytics"><div class="donut-wrap"><div class="pipeline-donut" style="background:${gradient}"><div class="donut-center"><strong>${total}</strong><small>Total prospek</small></div></div></div><div class="donut-legend">${STATUS.map((status,i)=>`<div class="donut-legend-item"><span class="donut-legend-label"><span class="donut-dot" style="background:${PIPELINE_COLORS[i]}"></span>${esc(status)}</span><b>${counts[i]}</b></div>`).join('')}</div></div>`;
 }
 function decorateStats(){
  const icons=[
@@ -598,19 +391,10 @@ function decorateStats(){
 function render(){
  const total=db.sponsors.length,contacted=db.sponsors.filter(s=>s.status!=='Belum dihubungi').length,accepted=db.sponsors.filter(s=>s.status==='Diterima').length,sum=db.transactions.filter(t=>(t.direction||'income')==='income').reduce((a,t)=>a+(+t.amount||0),0);
  $('total').textContent=total;$('contacted').textContent=contacted;$('accepted').textContent=accepted;$('income').textContent=money(sum);
- decorateStats();renderPipelineDonut();
- const stages=STATUS.slice(0,4),drop=db.sponsors.filter(x=>x.status==='Ditolak').length;
- $('pipeline').innerHTML=`<div class="pipeline-split"><div class="pipeline-funnel">${stages.map((status,i)=>{let n=db.sponsors.filter(x=>x.status===status).length,pct=total?n/total*100:0;return `<button class="pipeline-row" data-pipeline-status="${esc(status)}"><span class="stage-mark stage-${i}"></span><span class="pipeline-stage-name">${esc(status)}</span><b class="pipeline-count">${n}</b><span class="pipeline-track"><i class="pipeline-fill stage-fill-${i}" style="width:${pct}%"></i></span><small>${pct.toFixed(0)}%</small></button>`}).join('')}</div></div>`;
- const dropBtn=$('dropOffFilter');if(dropBtn){dropBtn.textContent=`Ditolak · ${drop}`;dropBtn.dataset.pipelineStatus='Ditolak'}
- let today=new Date();today.setHours(0,0,0,0);let dueItems=[];db.sponsors.forEach(s=>{if(s.followUpDate)dueItems.push({s,date:s.followUpDate,kind:'Follow-up'});if(s.proposalReminderDate&&!s.proposalReplied)dueItems.push({s,date:s.proposalReminderDate,kind:'Proposal'})});dueItems=dueItems.filter(x=>new Date(x.date+'T00:00:00')<=new Date(today.getTime()+7*86400000)).sort((a,b)=>a.date.localeCompare(b.date)).slice(0,7);
- $('todo').innerHTML=dueItems.length?dueItems.map(x=>{const d=new Date(x.date+'T00:00:00');const diff=Math.round((d-today)/86400000);const urgent=diff<0?'Terlambat':diff===0?'Hari Ini':'Segera';const contact=contactAction(x.s.contact);return `<div class="task-row"><div class="task-main"><span class="urgency ${diff<0?'late':diff===0?'today':''}">${urgent}</span><b>${esc(x.s.name)}</b><small>${x.kind} · ${esc(x.date)} · ${esc(x.s.owner||x.s.claimedBy||'Belum ada PIC')}</small></div><div class="task-actions">${contact.includes('<a ')?contact.replace('Buka kontak ↗','Kontak ↗'):'<span class="muted">—</span>'}<button class="ghost sm" data-edit-status="${x.s.id}">Update Status</button></div></div>`}).join(''):'<div class="empty">Tidak ada jadwal follow-up yang jatuh tempo dalam 7 hari.</div>';
- const people=(db.people||[]).map(name=>{const list=db.sponsors.filter(s=>(s.claimedBy||s.owner)===name),acc=list.filter(s=>s.status==='Diterima').length;return {name,n:list.length,rate:list.length?Math.round(acc/list.length*100):0}}).sort((a,b)=>b.n-a.n||b.rate-a.rate);
- $('picLeaderboard').innerHTML=people.length?people.map(x=>`<div class="leader-row"><div class="leader-head"><b>${esc(x.name)}</b><span>${x.n} prospek · ${x.rate}% ACC</span></div><div class="leader-track"><i style="width:${total?x.n/Math.max(1,...people.map(p=>p.n))*100:0}%"></i></div></div>`).join(''):'<div class="empty">Belum ada data PIC.</div>';
- const cats={};db.sponsors.forEach(s=>{const c=s.category||'Umum';cats[c]=(cats[c]||0)+1});const catRows=Object.entries(cats).sort((a,b)=>b[1]-a[1]).slice(0,7);$('categoryBreakdown').innerHTML=catRows.length?catRows.map(([name,n])=>`<div class="category-row"><span>${esc(name)}</span><div class="leader-track"><i style="width:${total?n/total*100:0}%"></i></div><b>${n}</b></div>`).join(''):'<div class="empty">Belum ada kategori.</div>';
- const dueCount=dueItems.length;const greet=$('commandSummary');if(greet)greet.textContent=`Ada ${dueCount} jadwal tindak lanjut dalam 7 hari · ${total} prospek tercatat di database.`;
- const acceptedList=db.sponsors.filter(s=>s.status==='Diterima');const cash=acceptedList.filter(s=>/uang|tunai|cash/i.test(s.form||'')).length,inkind=acceptedList.length-cash;$('acceptedSplit').innerHTML=`<span>Uang <b>${cash}</b></span><span>Non-tunai <b>${inkind}</b></span>`;
- const target=15000000,pct=Math.min(100,Math.round(sum/target*100));$('rabPercent').textContent=pct+'%';$('rabBar').style.width=pct+'%';$('rabText').textContent=`${money(sum)} dari ${money(target)}`;
- renderTable('all');renderTable('umkm');renderFinance();renderPeople();populateFilters();renderReminders();updateContextNav(document.querySelector('.page.active')?.id||'dashboard');
+  decorateStats();renderPipelineDonut();
+ $('pipeline').innerHTML=STATUS.map((s,i)=>{let n=db.sponsors.filter(x=>x.status===s).length,pct=total?n/total*100:0;return `<div class="pipeline-row" style="--delay:${i*65}ms"><div class="pipeline-top"><span class="tag st${i}">${s}</span><b class="pipeline-count">${n}</b></div><div class="pipeline-track"><div class="pipeline-fill" style="--target:${pct}%"></div></div><small class="pipeline-percent">${pct.toFixed(1)}% dari seluruh prospek</small></div>`}).join('');
+ let todo=db.sponsors.filter(s=>s.status==='Sudah dihubungi'||s.status==='Menunggu jawaban').slice(0,6);$('todo').innerHTML=todo.length?todo.map(s=>`<div class="person"><div><b>${esc(s.name)}</b><small>${esc(s.owner||'Belum ada PIC')} · ${esc(s.status)}</small></div><button class="ghost sm" data-edit-status="${s.id}">Update</button></div>`).join(''):'<div class="empty">Belum ada follow-up yang tercatat.</div>';
+ renderTable('all');renderTable('umkm');renderFinance();renderPeople();populateFilters();renderHeld();renderReminders();
 }
 function getFilters(type){let ids=type==='all'?['qAll','fStatus','fCategory','fOwner']:['qUmkm','uStatus','uCategory','uOwner'];return ids.map(id=>$(id)?.value||'')}
 function contactAction(value){
@@ -721,7 +505,7 @@ $('qHeld')?.addEventListener('input',renderHeld);$('heldStatus')?.addEventListen
 document.addEventListener('change',e=>{let el=e.target;if(el.dataset.heldStatus){let s=db.sponsors.find(x=>x.id===el.dataset.heldStatus);if(s){s.status=el.value;save();render()}}});
 document.addEventListener('click',e=>{let u=e.target.closest('[data-unclaim]');if(u){let s=db.sponsors.find(x=>x.id===u.dataset.unclaim);if(s&&confirm('Lepaskan sponsor ini dari pemegang?')){s.claimedBy='';s.claimedAt='';save();render()} }});
 document.addEventListener('click',e=>{
- const catBtn=e.target.closest('[data-category]');if(catBtn){const map={overview:'dashboard',prospects:'sponsors',collab:'chat',manage:'finance'};nav(map[catBtn.dataset.category]);return}const pipelineBtn=e.target.closest('[data-pipeline-status]');if(pipelineBtn){nav('sponsors');$('fStatus').value=pipelineBtn.dataset.pipelineStatus;renderTable('all');return}const navBtn=e.target.closest('[data-page]');if(navBtn){nav(navBtn.dataset.page);return}
+ const navBtn=e.target.closest('[data-page]');if(navBtn){nav(navBtn.dataset.page);return}
  const go=e.target.closest('[data-go]');if(go){nav(go.dataset.go);return}
  const act=e.target.closest('[data-action]');if(act){let a=act.dataset.action;if(a==='add-general')addSponsor('general');if(a==='add-umkm')addSponsor('umkm');if(a==='add-person')addPerson();if(a==='close-modal')$('modal').classList.remove('open');if(a==='copy-message'){let t=$('messageText').value;if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(t).then(()=>toast('Pesan berhasil disalin')).catch(()=>fallbackCopy(t));else fallbackCopy(t)}if(a==='add-tx')addFinancialTransaction('income');if(a==='add-expense')addFinancialTransaction('expense');if(a==='export-finance')exportFinanceCSV();if(a==='check-reminders'){renderReminders();nav('followups')}if(a==='save-gemini'){localStorage.setItem('sponsorhub_gemini_key',$('geminiKey').value.trim());toast('Gemini API Key disimpan di browser ini')}if(a==='clear-gemini'){localStorage.removeItem('sponsorhub_gemini_key');$('geminiKey').value='';toast('API Key dihapus')}if(a==='ask-gemini')askGemini();if(a==='send-chat')sendChat();if(a==='export-lpj')exportLPJ();if(a==='print-lpj')window.print();if(a==='reset'&&confirm('Reset seluruh data? Export backup terlebih dahulu jika diperlukan.')){localStorage.removeItem('sponsorhub_stable_v2');db=fresh();save();render();toast('Data direset')}return}
  const del=e.target.closest('[data-delete]');if(del){let s=db.sponsors.find(x=>x.id===del.dataset.delete);if(confirm('Hapus '+s.name+'?')){db.sponsors=db.sponsors.filter(x=>x.id!==s.id);save();render()}return}
@@ -755,14 +539,15 @@ const SUPABASE_ANON_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYm
 if(!window.supabase){$('loginError').textContent='Library Supabase gagal dimuat. Periksa koneksi internet.';}else{cloudClient=window.supabase.createClient(SUPABASE_URL,SUPABASE_ANON_KEY);cloudClient.auth.getSession().then(({data,error})=>{if(error)console.error(error);if(data.session)startWorkspace(data.session)});cloudClient.auth.onAuthStateChange((event,session)=>{if(event==='SIGNED_IN'&&session&&!currentUser)startWorkspace(session);if(event==='SIGNED_OUT'){currentUser=null;appReady=false;document.body.classList.remove('authed');$('cloudUser').textContent='';$('saveState').textContent='● Keluar'}})}
 $('loginForm').addEventListener('submit',async e=>{e.preventDefault();$('loginError').textContent='';$('loginBtn').disabled=true;$('loginBtn').textContent='Memeriksa akun…';try{const {data,error}=await cloudClient.auth.signInWithPassword({email:$('loginEmail').value.trim(),password:$('loginPassword').value});if(error)throw error;if(data.session)await startWorkspace(data.session)}catch(err){$('loginError').textContent=err.message||'Login gagal.'}finally{$('loginBtn').disabled=false;$('loginBtn').textContent='Masuk ke Workspace'}});
 $('logoutBtn').addEventListener('click',async()=>{if(confirm('Keluar dari SponsorHub?'))await cloudClient.auth.signOut()});
-const savedTheme=localStorage.getItem('sponsorhub_theme')||'dark';document.body.dataset.theme=savedTheme;function updateThemeButton(){$('themeToggle').textContent=document.body.dataset.theme==='dark'?'☀️ Terang':'🌙 Gelap'}updateThemeButton();updateContextNav('dashboard');$('themeToggle').addEventListener('click',()=>{const next=document.body.dataset.theme==='dark'?'light':'dark';document.body.dataset.theme=next;localStorage.setItem('sponsorhub_theme',next);updateThemeButton()});
+const savedTheme=localStorage.getItem('sponsorhub_theme')||'dark';document.body.dataset.theme=savedTheme;function updateThemeButton(){$('themeToggle').textContent=document.body.dataset.theme==='dark'?'☀️ Terang':'🌙 Gelap'}updateThemeButton();$('themeToggle').addEventListener('click',()=>{const next=document.body.dataset.theme==='dark'?'light':'dark';document.body.dataset.theme=next;localStorage.setItem('sponsorhub_theme',next);updateThemeButton()});
 // Password visibility on login
 $('togglePassword')?.addEventListener('click',()=>{const input=$('loginPassword');const show=input.type==='password';input.type=show?'text':'password';$('togglePassword').textContent=show?'Sembunyikan':'Tampilkan';$('togglePassword').setAttribute('aria-label',show?'Sembunyikan password':'Tampilkan password')});
 // Global navigation search: sponsor names and app sections
-const navPages=[['Dashboard','dashboard'],['List Sponsor','sponsors'],['List Sponsor UMKM','umkm'],['Follow-up & Reminder','followups'],['Tanya AI Sponsor','ai'],['Grup Diskusi','chat'],['Keuangan & RAB','finance'],['Penanggung Jawab','team']];
+const navPages=[['Dashboard','dashboard'],['List Sponsor','sponsors'],['List Sponsor UMKM','umkm'],['Pemegang Sponsor','held'],['Follow-up & Reminder','followups'],['Tanya AI Sponsor','ai'],['Grup Diskusi','chat'],['Keuangan & RAB','finance'],['Penanggung Jawab','team']];
 function renderNavSearch(){const q=($('navSearch')?.value||'').trim().toLowerCase(),box=$('navSearchResults');if(!box)return;if(!q){box.hidden=true;box.innerHTML='';return}const pages=navPages.filter(x=>x[0].toLowerCase().includes(q)).slice(0,4),sponsors=db.sponsors.filter(x=>x.name.toLowerCase().includes(q)).slice(0,7);box.innerHTML=[...pages.map(x=>`<button class="nav-result" data-search-page="${x[1]}"><span>⌘</span>${x[0]}<small>Menu</small></button>`),...sponsors.map(x=>`<button class="nav-result" data-search-sponsor="${x.id}"><span>◉</span>${esc(x.name)}<small>${x.group==='umkm'?'UMKM':'Sponsor'}</small></button>`)].join('')||'<div class="nav-no-result">Tidak ada hasil.</div>';box.hidden=false}
 $('navSearch')?.addEventListener('input',renderNavSearch);$('navSearch')?.addEventListener('keydown',e=>{if(e.key==='Escape'){$('navSearch').value='';renderNavSearch()}if(e.key==='Enter'){const first=$('navSearchResults').querySelector('button');if(first)first.click()}});
 document.addEventListener('click',e=>{const pg=e.target.closest('[data-search-page]');if(pg){nav(pg.dataset.searchPage);$('navSearch').value='';renderNavSearch();return}const sp=e.target.closest('[data-search-sponsor]');if(sp){const item=db.sponsors.find(x=>x.id===sp.dataset.searchSponsor);if(item){const page=item.group==='umkm'?'umkm':'sponsors';nav(page);const qid=page==='umkm'?'qUmkm':'qAll';$(qid).value=item.name;renderTable(page==='umkm'?'umkm':'all');setTimeout(()=>{const card=[...document.querySelectorAll('.sponsor-card')].find(c=>c.querySelector('.sponsor-card-name')?.textContent===item.name);card?.setAttribute('open','');card?.scrollIntoView({behavior:'smooth',block:'center'})},50)}$('navSearch').value='';renderNavSearch();return}if(!e.target.closest('.nav-search-wrap')){$('navSearchResults').hidden=true}});
+const sidebarHidden=localStorage.getItem('sponsorhub_sidebar_hidden')==='1';if(sidebarHidden){$('sidebarToggle').textContent='☰ Tampilkan';document.querySelector('.app').classList.add('sidebar-hidden');document.querySelector('.sidebar').classList.add('collapsed')}$('sidebarToggle').addEventListener('click',()=>{const hidden=document.querySelector('.app').classList.toggle('sidebar-hidden');document.querySelector('.sidebar').classList.toggle('collapsed',hidden);localStorage.setItem('sponsorhub_sidebar_hidden',hidden?'1':'0');$('sidebarToggle').textContent=hidden?'☰ Tampilkan':'☰ Navigasi'});
 
 })();
 </script></body></html>
