@@ -274,7 +274,58 @@ body[data-theme="light"] .pipeline-donut:before{border:1px solid #eee9f4}
   *,*:before,*:after{animation:none!important;transition:none!important}
 }
 
-</style></head>
+</style>
+<style id="sponsorhub-spatial-dashboard">
+/* SponsorHub spatial glass direction — dashboard-first visual layer */
+:root{--sh-violet:#8b72ee;--sh-lilac:#c7baff;--sh-glass:rgba(255,255,255,.075)}
+body{background:radial-gradient(ellipse at 78% 8%,rgba(139,114,238,.22),transparent 32%),radial-gradient(ellipse at 8% 42%,rgba(75,139,190,.13),transparent 34%),var(--bg)}
+.sidebar{backdrop-filter:blur(24px);-webkit-backdrop-filter:blur(24px);background:rgba(8,14,29,.82)}
+.main{max-width:1680px;padding:clamp(18px,2.4vw,36px)}
+.top{padding:4px 2px 18px;border-bottom:1px solid rgba(170,160,220,.14)}
+.top h1{font-weight:800;letter-spacing:-.045em}
+.eyebrow{color:#b7a7ff;letter-spacing:2px}
+.stat,.panel{background:linear-gradient(145deg,rgba(34,38,68,.78),rgba(16,23,43,.82));border:1px solid rgba(197,185,255,.17);box-shadow:0 18px 50px rgba(0,0,0,.17),inset 0 1px 0 rgba(255,255,255,.08);backdrop-filter:blur(22px);-webkit-backdrop-filter:blur(22px)}
+.stat{position:relative;overflow:hidden;border-radius:20px;padding:19px 18px;transition:transform .35s cubic-bezier(.2,.8,.2,1),border-color .35s}
+.stat:after{content:"";position:absolute;width:110px;height:110px;right:-44px;top:-52px;border-radius:50%;background:radial-gradient(circle,rgba(168,147,255,.2),transparent 70%);pointer-events:none}
+.stat:hover{transform:translateY(-3px);border-color:rgba(197,185,255,.38)}
+.stat strong{font-size:clamp(25px,2.2vw,32px);letter-spacing:-.04em}
+.panel{border-radius:21px;padding:19px}
+.dashboard-grid{align-items:stretch}
+.dashboard-panel{min-height:270px}
+.panelhead h2{font-size:15px;letter-spacing:-.02em}
+.notice{background:rgba(139,114,238,.10);border-color:rgba(180,163,255,.22);border-radius:14px}
+button{transition:transform .25s ease,filter .25s ease,box-shadow .25s ease}
+button:not(.ghost){box-shadow:0 8px 22px rgba(113,91,218,.18)}
+.field{background:rgba(9,15,31,.62)}
+.sh-hero{position:relative;isolation:isolate;overflow:hidden;min-height:300px;margin:0 0 17px;padding:clamp(24px,3vw,42px);border-radius:26px;border:1px solid rgba(204,194,255,.22);background:linear-gradient(112deg,rgba(34,31,67,.96) 0%,rgba(37,43,78,.88) 48%,rgba(31,48,70,.72) 100%);box-shadow:0 24px 65px rgba(0,0,0,.22),inset 0 1px 0 rgba(255,255,255,.14);display:flex;align-items:center;justify-content:space-between;gap:20px}
+.sh-hero:before{content:"";position:absolute;inset:0;z-index:-1;background:radial-gradient(ellipse at 78% 50%,rgba(166,147,255,.25),transparent 36%),linear-gradient(90deg,rgba(8,12,28,.2),transparent 65%)}
+.sh-hero-copy{position:relative;z-index:2;max-width:540px}
+.sh-kicker{font-size:10px;font-weight:800;letter-spacing:2px;color:#c8bcff;display:flex;align-items:center;gap:9px;margin-bottom:18px}
+.sh-live-dot{width:7px;height:7px;border-radius:50%;background:#80e4bd;box-shadow:0 0 12px #80e4bd}
+.sh-hero h2{font-size:clamp(29px,4vw,48px);line-height:1.04;letter-spacing:-.055em;margin:0 0 13px;color:#fff}
+.sh-hero h2 em{font-style:normal;color:#c7baff}
+.sh-hero p{max-width:450px;color:rgba(239,237,255,.72);font-size:13px;line-height:1.7;margin:0}
+.sh-hero-actions{display:flex;align-items:center;gap:15px;margin-top:22px;flex-wrap:wrap}
+.sh-hero-note{font-size:11px;color:rgba(239,237,255,.58)}
+.sh-orbit{position:relative;width:min(43%,440px);height:260px;flex:none}
+.sh-orbit-word{position:absolute;inset:50% auto auto 50%;transform:translate(-50%,-50%);font-size:clamp(48px,8vw,105px);font-weight:900;letter-spacing:-.09em;color:rgba(255,255,255,.075);white-space:nowrap}
+.sh-orbit-ring{position:absolute;left:50%;top:50%;border:1px solid rgba(218,211,255,.24);border-radius:50%;transform:translate(-50%,-50%) rotate(-24deg)}
+.sh-ring-one{width:235px;height:235px}.sh-ring-two{width:310px;height:170px;transform:translate(-50%,-50%) rotate(32deg);border-color:rgba(139,203,255,.22)}
+.sh-orbit-core{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:92px;height:92px;border-radius:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(145deg,rgba(255,255,255,.25),rgba(180,165,255,.12));border:1px solid rgba(255,255,255,.42);box-shadow:0 15px 45px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.55);backdrop-filter:blur(18px);color:#fff}
+.sh-orbit-core span{font-size:28px;font-weight:900;letter-spacing:-2px}.sh-orbit-core small{font-size:8px;letter-spacing:3px;color:#d8d0ff}
+.sh-float{position:absolute;padding:10px 13px;border-radius:14px;background:rgba(247,245,255,.13);border:1px solid rgba(255,255,255,.26);box-shadow:0 12px 30px rgba(0,0,0,.16);backdrop-filter:blur(18px);color:#d7ccff;font-size:12px;animation:shFloat 5s ease-in-out infinite}
+.sh-float b{color:#fff;margin-left:5px}.sh-float small{display:block;color:rgba(255,255,255,.56);font-size:9px;margin:3px 0 0 19px}
+.sh-float-a{top:22px;right:5px}.sh-float-b{bottom:19px;left:2px;animation-delay:-2.2s}
+@keyframes shFloat{0%,100%{transform:translateY(0)}50%{transform:translateY(-7px)}}
+body[data-theme="light"]{background:radial-gradient(ellipse at 78% 8%,rgba(139,114,238,.13),transparent 32%),#f3f1f8;color:#25233a}
+body[data-theme="light"] .stat,body[data-theme="light"] .panel{background:rgba(255,255,255,.78);border-color:rgba(117,99,174,.15);box-shadow:0 14px 40px rgba(50,40,90,.07),inset 0 1px 0 #fff}
+body[data-theme="light"] .sidebar{background:rgba(250,249,255,.9)}
+body[data-theme="light"] .field{background:#fff;color:#29263c}
+@media(max-width:900px){.sh-orbit{width:38%;transform:scale(.88)}.sh-hero{min-height:270px}}
+@media(max-width:650px){.sh-hero{padding:23px;min-height:0}.sh-orbit{position:absolute;right:-90px;bottom:-55px;width:260px;height:220px;opacity:.65;transform:scale(.8);transform-origin:bottom right}.sh-hero-copy{max-width:100%}.sh-hero p{max-width:90%}.sh-hero h2{font-size:32px}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.stat{padding:14px}.stat strong{font-size:24px}.dashboard-grid{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){.sh-float{animation:none}button,.stat{transition:none}}
+</style>
+</head>
 <body>
 <div class="authscreen"><div class="authcard"><div class="logo" style="margin-bottom:16px">SH</div><div class="eyebrow">SPONSOR MANAGEMENT WORKSPACE</div><h1>Masuk ke SponsorHub</h1><p>Gunakan akun anggota panitia yang sudah dibuat di Supabase Auth. Pendaftaran publik tidak disediakan.</p><form id="loginForm"><label for="loginEmail">Email anggota</label><input class="field" id="loginEmail" type="email" autocomplete="username" required placeholder="nama@email.com"><label for="loginPassword">Password</label><div class="password-wrap"><input class="field" id="loginPassword" type="password" autocomplete="current-password" required placeholder="Password akun"><button class="ghost sm password-toggle" id="togglePassword" type="button" aria-label="Tampilkan password">Tampilkan</button></div><button id="loginBtn" type="submit">Masuk ke Workspace</button><div class="autherr" id="loginError"></div></form><p style="font-size:11px;margin-top:18px">Akses hanya untuk anggota yang akunnya telah diundang/dibuat oleh admin Supabase.</p></div></div>
 <div class="app">
@@ -291,7 +342,16 @@ body[data-theme="light"] .pipeline-donut:before{border:1px solid #eee9f4}
 </nav><div class="sidefoot">Database bersama Supabase.<br>Perubahan disinkronkan untuk anggota login.</div></aside>
 <main class="main">
 <header class="top"><div><div class="eyebrow">SPONSOR MANAGEMENT WORKSPACE</div><h1 id="title">Dashboard</h1><div class="muted">Ruang kerja tim untuk mengelola prospek, komunikasi, penanggung jawab, dan arus kas sponsorship.</div></div><div class="topright"><button class="ghost sm" id="sidebarToggle" title="Sembunyikan / tampilkan navigasi">☰ Navigasi</button><button class="ghost sm theme-btn" id="themeToggle" title="Ganti tema">☀️ Terang</button><span class="saved" id="saveState">● Menyiapkan koneksi</span><span class="clouduser" id="cloudUser"></span><button class="ghost sm" id="logoutBtn">Keluar</button><button class="ghost" id="backupBtn">↓ Backup JSON</button><button id="saveFileBtn">Simpan ke File</button></div></header>
-<section class="page active" id="dashboard">
+<section class="page active" id="dashboard"><section class="sh-hero">
+  <div class="sh-hero-copy">
+    <div class="sh-kicker"><span class="sh-live-dot"></span> SPONSORSHIP COMMAND CENTER</div>
+    <h2>Bangun relasi.<br><em>Wujudkan kolaborasi.</em></h2>
+    <p>Kelola setiap peluang sponsor, pantau progres pendekatan, dan gerakkan tim dalam satu ruang kerja.</p>
+    <div class="sh-hero-actions"><button data-go="sponsors">＋ Tambah prospek</button><span class="sh-hero-note">Dies Natalis Teknik Elektro</span></div>
+  </div>
+  <div class="sh-orbit" aria-hidden="true"><div class="sh-orbit-word">SPONSOR</div><div class="sh-orbit-ring sh-ring-one"></div><div class="sh-orbit-ring sh-ring-two"></div><div class="sh-orbit-core"><span>SH</span><small>HUB</small></div><div class="sh-float sh-float-a">✦ <b>Partnership</b><small>Build together</small></div><div class="sh-float sh-float-b">↗ <b>Growth</b><small>One connection at a time</small></div></div>
+</section>
+
 <div class="stats"><div class="stat"><small>Total calon sponsor</small><strong id="total">0</strong><small>Seluruh database</small></div><div class="stat"><small>Sudah dihubungi</small><strong id="contacted">0</strong><small>Termasuk menunggu jawaban</small></div><div class="stat"><small>Sponsor diterima</small><strong id="accepted">0</strong><small>Status diterima</small></div><div class="stat"><small>Total pemasukan</small><strong id="income">Rp0</strong><small>Dari transaksi tercatat</small></div></div>
 <div class="two dashboard-grid"><div class="panel dashboard-panel pipeline-panel"><div class="panelhead"><div><h2>Pipeline sponsorship</h2><p>Ringkasan status seluruh calon sponsor</p></div></div><div id="pipeline"></div><div id="pipelineDonut"></div></div><div class="panel dashboard-panel followup-panel"><div class="panelhead"><div><h2>Perlu follow-up</h2><p>Calon sponsor yang perlu ditindaklanjuti</p></div></div><div id="todo"></div></div></div>
 <div class="panel"><h2 style="margin-top:0">Alur kerja singkat</h2><div class="notice">Pilih calon sponsor → tetapkan kategori dan PIC → buat pesan pendekatan → update status komunikasi → catat transaksi jika dukungan sudah diterima.</div><div class="toolbar"><button data-go="sponsors">Buka List Sponsor</button><button class="ghost" data-go="team">Atur Penanggung Jawab</button></div></div>
